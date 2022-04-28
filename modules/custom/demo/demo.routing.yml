@@ -1,0 +1,32 @@
+demo.description:
+  path: '/demo/hello-world'
+  defaults:
+     _controller: '\Drupal\demo\Controller\DemoController::description'
+     _title: 'Hello world title'
+  requirements:
+     _permission: 'access content'
+
+demo.contact_form:
+  path: '/demo/contact'
+  defaults:
+     _form: '\Drupal\demo\Form\contactForm'
+     _title: 'Formulaire de contact'
+  requirements:
+     _permission: 'access content'
+
+demo.requests:
+  path: '/demo/requests'
+  defaults:
+     _controller: '\Drupal\demo\Controller\DemoController::requests'
+     _title: 'requests'
+  requirements:
+     _permission: 'access content'
+
+demo.configuiration:
+  path: '/admin/demo/config'
+  defaults:
+    _form: '\Drupal\demo\Form\DemoConfigForm'
+    _title: 'Configuration personnalisée '
+  requirements:
+    _permission: 'access administration pages'
+    

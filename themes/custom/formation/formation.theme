@@ -1,0 +1,7 @@
+<?php
+
+function formation_preprocess_node(&$variables) {
+    if($variables['node']->nid->value == 2) {
+    $variables['#attached'] ['library'][] = 'formation/node-css';
+    }
+}
